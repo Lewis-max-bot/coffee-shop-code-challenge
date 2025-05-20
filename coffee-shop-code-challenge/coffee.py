@@ -1,5 +1,5 @@
 class Coffee:
-    def init(self, name):
+    def __init__(self, name):
         if not isinstance(name, str) or len(name) < 3:
             raise ValueError("Coffee name must be a string with at least 3 characters.")
         self.name = name
